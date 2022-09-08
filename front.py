@@ -37,7 +37,7 @@ option.add_experimental_option("prefs", {
 #위에 옵션 이용해서 권한 알립 팝업 종료시키고 사이트 열기
 driver = webdriver.Chrome(chrome_options=option, executable_path=CHROME_DRIVER_PATH)
 driver.get(url)
-time.sleep(2)
+time.sleep(2) 
 
 action = ActionChains(driver)
 
@@ -198,11 +198,11 @@ time.sleep(2)
 driver.back()
 time.sleep(2)
 
-# 서브 배너 선택 후 새 창 닫기
-driver.find_element_by_css_selector('.slick-slider.ImageSlider__StyledSlider-sc-1obm2ug-1.pFyVo.slick-initialized').click()
-time.sleep(2)
-driver.back()
-time.sleep(2)
+# # 서브 배너 선택 후 새 창 닫기
+# driver.find_element_by_css_selector('.slick-slider.ImageSlider__StyledSlider-sc-1obm2ug-1.pFyVo.slick-initialized').click()
+# time.sleep(2)
+# driver.back()
+# time.sleep(2)
 
 # 새 창 선택 > 새창 종료 > 기존창 선택 함수
 # new_tabs()
@@ -506,6 +506,9 @@ while i < 4 :
         driver.back()
         time.sleep(2)
         i = i+1
+
+driver.refresh()
+time.sleep(3)
 
 # 배지 영역 선택
 driver.find_element_by_css_selector('.FripBadge__Container-sc-1symmx5-0.juuNtL').click()

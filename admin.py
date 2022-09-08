@@ -56,7 +56,7 @@ driver.find_elements_by_css_selector('.my-2.col-lg-6.align-self-stretch')[5].cli
 time.sleep(2)
 
 #프립명 입력
-driver.find_elements_by_css_selector('.form-control')[4].send_keys('[QA]프립 자동화 테스트 입니다.11')
+driver.find_elements_by_css_selector('.form-control')[4].send_keys('[QA]프립 자동화 테스트 입니다.12')
 
 #진행 장소 항목까지 스크롤
 scrolllist2 = driver.find_elements_by_class_name('btn.frip-button.float-right.btn-outline-frip-default.btn-md')[0]
